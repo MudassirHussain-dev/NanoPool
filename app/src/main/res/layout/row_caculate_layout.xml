@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/viewYear"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/view_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="@color/yellow"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="PERIOD"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewYear"
+        app:layout_constraintEnd_toStartOf="@+id/txtYearCoins"
+        app:layout_constraintStart_toStartOf="@+id/viewYear"
+        app:layout_constraintTop_toTopOf="@+id/viewYear"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtYearCoins"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="@color/green"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="COINS"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewYear"
+        app:layout_constraintEnd_toStartOf="@+id/txtYearBTC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtYear"
+        app:layout_constraintTop_toTopOf="@+id/viewYear"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtYearPrice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="@color/perpal"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="USD"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewYear"
+        app:layout_constraintEnd_toEndOf="@+id/viewYear"
+        app:layout_constraintStart_toEndOf="@+id/txtYearBTC"
+        app:layout_constraintTop_toTopOf="@+id/viewYear" />
+
+    <TextView
+        android:id="@+id/txtYearBTC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:background="@color/pink"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="BTC"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewYear"
+        app:layout_constraintEnd_toStartOf="@+id/txtYearPrice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtYearCoins"
+        app:layout_constraintTop_toTopOf="@+id/viewYear" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
