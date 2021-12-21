@@ -1,13 +1,10 @@
 package dev.hmh.nanopol.ui.auth
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.MobileAds
+import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
-import dev.hmh.nanopol.R
 import dev.hmh.nanopol.databinding.ActivityAuthBinding
-import dev.hmh.nanopol.databinding.ActivityNewAccountBinding
+
 
 @AndroidEntryPoint
 class AuthActivity : AppCompatActivity() {
